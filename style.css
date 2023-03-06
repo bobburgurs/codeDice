@@ -9,37 +9,48 @@ header {
   color: white;
   text-align: center;
   padding: 20px;
-  border: 20px; 
+  border: solid;
+  border-color: lightyellow;
+  border-width: 10px; 
+  border-radius: 45px;
+  margin-right: 80px;
+  margin-left: 80px;
+   font-family: "Courier New", monospace; 
+
 }
 
 .dice {
   width: 100px;
   height: 100px;
-  border: 2px solid black;
+  border: 5px solid lightyellow;
   display: flex;
+  color: lightyellow; 
   justify-content: center;
   align-items: center;
   font-size: 50px;
   margin: 20px auto;
   border-radius: 10px;
-  animation: pulse 1s infinite alternate;
+  animation: pulse 1s infinite;
+   font-family: "Courier New", monospace; 
 }
 
 button {
   font-size: 20px;
-  background-color: #4CAF50;
+  background-color: lightpink;
   color: white;
-  border: none;
+  border: 10px;
+  border-color: lightyellow;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   display: block;
   margin: 20px auto;
   transition: all 0.2s ease-in-out;
+   font-family: "Courier New", monospace; 
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: lavender;
   transform: scale(1.1);
 }
 
@@ -48,6 +59,8 @@ button:hover {
   text-align: center;
   margin: 20px auto;
   animation: fade-in 1s ease-in-out;
+  font-family: "Courier New", monospace; 
+  color: lavender;
 }
 
 @keyframes pulse {
