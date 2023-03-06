@@ -1,16 +1,16 @@
 function rollDice() {
-  var randomNumber;
+  // random number 
+  var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+  // output on the result text
   var dice = document.querySelector(".dice p");
   var result = document.getElementById("result");
-  var randomDecimal = Math.random();
-  var randomTimesSix = randomDecimal * 6;
-  var randomFloored = Math.floor(randomTimesSix);
-  var randomNumberPlusOne = randomFloored + 1;
-  var randomNumberString = String(randomNumberPlusOne);
-  var resultTextStart = "You rolled a ";
-  var resultTextEnd = "!";
-  var resultText = resultTextStart + randomNumberString + resultTextEnd;
-  randomNumber = randomNumberPlusOne;
-  dice.innerText = randomNumberString;
+  var randomNumString = randomNumber.toString();
+
+  // text
+  var resultText = "You rolled a " + randomNumString + "!";
+
+  // update the result 
+  dice.innerText = randomNumString;
   result.innerText = resultText;
 }
